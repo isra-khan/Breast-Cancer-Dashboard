@@ -107,8 +107,9 @@ def add_theme() -> None:
         @keyframes pulse { 0%,100% { opacity:.55; } 50% { opacity:.92; } }
         @keyframes float { 0%,100% { transform:translateY(0) rotate(-5deg); } 50% { transform:translateY(-4px) rotate(4deg); } }
         @media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; scroll-behavior:auto !important; } }
-        [data-testid="stMetric"] { background:#fff; border:1px solid #F2D7E1; padding:16px 18px; border-radius:18px;
-          box-shadow:0 5px 18px rgba(90,10,48,.055); min-height:112px; }
+        [data-testid="stMetric"] { display:flex; flex-direction:column; justify-content:center; box-sizing:border-box;
+          height:132px; background:#fff; border:1px solid #F2D7E1; padding:16px 18px; border-radius:18px;
+          box-shadow:0 5px 18px rgba(90,10,48,.055); }
         [data-testid="stMetricLabel"] { color:var(--muted); font-weight:600; }
         [data-testid="stMetricValue"] { color:var(--berry); font-weight:700; }
         .note-card { background:#FCEBF1; border:1px solid #F4D4E0; border-left:4px solid #D81B60; border-radius:13px; padding:14px 17px; color:#5A0A30; margin:8px 0 12px; }
